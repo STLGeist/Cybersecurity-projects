@@ -6,7 +6,8 @@ Images/CyberProjectDrawing.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  [filebeat_metricbeat-playbook.yml.txt](https://github.com/STLGeist/Cybersecurity-projects/files/7715493/filebeat_metricbeat-playbook.yml.txt)
+
 
 ### Description of the Topology
 
