@@ -29,11 +29,13 @@ The configuration details of each machine may be found below.
 | Server2  | Backup DVWA| 10.0.0.6   | Linux 18.04      |
 | Server3  | Backup DVWA| 10.0.0.7   | Linux 18.04      |
 | ELKvm    | ELK server | 10.1.0.4   | Linux 18.04      |
+
 Access Policies:
 - HTTP traffic to Servers
 - SSH to Jumpbox and SSH from Jumpbox to servers and ELKvm
 - SSH to ELKvm from Jumpbox within resource group
 - Port 5601 from my public IP to ELKvm external IP
+
 
 The machines on the internal network are not exposed to the public Internet. 
 
@@ -74,14 +76,14 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 
 2. Answer the following questions:
 
-    - In the last 7 days, how many unique visitors were located in India?
+    - In the last 7 days, how many unique visitors were located in India? 249
 
-    - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
+    - In the last 24 hours, of the visitors from China, how many were using Mac OSX? 8
 
-    - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
-    - In the last 7 days, what country produced the majority of the traffic on the website?
-    - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
-    - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
+    - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors? 0%
+    - In the last 7 days, what country produced the majority of the traffic on the website? China
+    - Of the traffic that's coming from that country, what time of day had the highest amount of activity? 13:00
+    - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file. CSS, describes how HTML elements are displayed on the screen. GZ, archive compressed file using gzip compresson.
 
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
      - Locate the time frame in the last 7 days with the most amount of bytes (activity).
