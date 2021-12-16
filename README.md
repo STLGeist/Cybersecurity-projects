@@ -55,7 +55,7 @@ The playbook implements the following tasks:
 - ...
 - ...
 
-docker_ps.png
+Images/docker_ps.png
  
 
 SSH into the control node and follow the steps below:
