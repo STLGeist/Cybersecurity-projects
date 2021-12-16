@@ -55,7 +55,7 @@ The playbook implements the following tasks:
 - ...
 - ...
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+docker_ps.png
  
 
 SSH into the control node and follow the steps below:
