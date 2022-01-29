@@ -36,6 +36,10 @@ Access Policies:
 - SSH to ELKvm from Jumpbox within resource group
 - Port 5601 from my public IP to ELKvm external IP
 
+![image](https://user-images.githubusercontent.com/89103977/151673406-70e56a9d-747f-412d-bde0-0169e3665622.png)
+
+CyberProjectDrawing.PNG
+
 
 The machines on the internal network are not exposed to the public Internet. 
 
