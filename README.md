@@ -52,25 +52,27 @@ Machines within the network can only be accessed by the Jumpbox VM.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- Main advantage is being able to deploy .yml condfig files with little to no downtime.
+- Main advantage is being able to deploy .yml config files with little to no downtime.
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install Docker and images for ELK stack
+- Configure playbooks for the ELK stack and filebeat/metricbeat
+- Install filebeat/metricbeat on the webservers and install ELK on the dedicated VM outside of the webserver network
+- Run Kibana VM to ensure connections are good and recieving data
 
 Images/docker_ps.png
  
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the roles file to /etc/ansible/roles.
+- Update the hosts file to include webserver IPs and ELKServer IP
+- Run the playbook, and navigate to HTTP://<ELKServer_Public_IP>:5601 to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- _Which file is the playbook? Where do you copy it? /etc/ansible/install-elk.yml
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?  /etc/ansible/hosts Specify the IP addresses for the dedicated VM for the ELK and the IP addresses for the webservers.
+- _Which URL do you navigate to in order to check that the ELK server is running? HTTP://<ELKServer_Public_IP>:5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
